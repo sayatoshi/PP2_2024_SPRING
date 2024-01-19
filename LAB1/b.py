@@ -1,0 +1,1 @@
+print("try to understand git")
