@@ -1,5 +1,5 @@
 carname="Volvo"
-x=50
+
 x=5
 y=10
 print(x+y)
