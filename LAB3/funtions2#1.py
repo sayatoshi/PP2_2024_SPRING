@@ -84,8 +84,8 @@ def highly_rated(movie_name, movies):
             return movie["imdb"] > 5.5
     return False
 
-movie_name_input = input("Enter the name of the movie: ")
-result = highly_rated(movie_name_input, movies)
+movie_name = input("Enter the name of the movie: ")
+result = highly_rated(movie_name, movies)
 
 print(result)
 
