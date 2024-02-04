@@ -77,11 +77,11 @@ movies = [
 ]
 
 
-def highly_rated_movies(movies):
+def highly_rated(movies):
     high_rated_movies = [movie["name"] for movie in movies if movie["imdb"] > 5.5]
     return high_rated_movies
 
-# Get and print the names of highly rated movies
-result_movies = highly_rated_movies(movies)
+
+result_movies = highly_rated(movies)
 print("Movies with a rating above 5.5:")
 print(result_movies)
