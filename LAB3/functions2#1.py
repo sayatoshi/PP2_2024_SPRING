@@ -85,7 +85,7 @@ def highly_rated(movie_name, movies):
     return False
 
 movie_name = input("Enter the name of the movie:")
-result = highly_rated(movie_name, movies)
+result = highly_rated(movie_name,movies)
 
 print(result)
 
