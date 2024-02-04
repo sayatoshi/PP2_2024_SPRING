@@ -78,14 +78,18 @@ movies = [
 }
 ]
 
-def highly_rated(movie_name, movies):
-    for movie in movies:
-        if movie["name"] == movie_name:
-            return movie["imdb"] > 5.5
-    return False
 
-movie_name = input("Enter the name of the movie:")
-result = highly_rated(movie_name, movies)
 
-print(result)
+def get_movies(category_name, movies):
+    category_movies = [movie for movie in movies if movie["category"] == category_name]
+    return category_movies
+
+
+category_input = input("Enter a category name: ")
+result_category_movies = get_movies(category_input, movies)
+
+if result_category_movies:
+    print(f"Movies in the category '{category_input}':")
+    for movie in result_category_movies:
+        print(f"- {movie['name']}")
 
