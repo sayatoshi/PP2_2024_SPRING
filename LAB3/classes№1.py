@@ -1,17 +1,17 @@
-class StringManipulator:
-    def __init__(self):
-        self.input_string = ""
+class String:
+    def __init__(s):
+        s.input = ""
 
-    def getString(self):
-        self.input_string = input("Enter a string: ")
+    def getString(s):
+        s.input = input("Enter a string:")
 
-    def printString(self):
-        print("String in Upper case:", self.input_string.upper())
+    def printString(s):
+        print("String in Upper case:", s.input.upper())
 
 
-string_manipulator = StringManipulator()
-string_manipulator.getString()
-string_manipulator.printString()
+string_m = String()
+string_m.getString()
+string_m.printString()
 
 
  
